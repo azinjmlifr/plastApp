@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { BASE_URL } from "../../../../api/apiClient";
+// import { useDispatch, useSelector } from "react-redux";
+// import { BASE_URL } from "../../../../api/apiClient";
 import { FlexMainBanner } from "./styledMainBanner";
 import { FlexBannerImage } from "./styledBannerImage";
-import { firstBanners } from "../../../../layout/layoutSlice";
-import { getAllBannerImg, mainBanner, BannerStatus } from "./mainBannerSLice";
-import { MAIN_BANNERS } from "../../../../service/homeService";
+// import { firstBanners } from "../../../../layout/layoutSlice";
+// import { getAllBannerImg, mainBanner, BannerStatus } from "./mainBannerSLice";
+// import { MAIN_BANNERS } from "../../../../service/homeService";
 import { GlobalBannerContainer } from "../../../../global/styles/GlobalBannerContainer";
+import { NavLink } from "react-router-dom";
 
 import img1 from "../../../../assets/adImgs/ad1.webp";
 import img2 from "../../../../assets/adImgs/ad2.webp";
@@ -30,7 +31,9 @@ export const MainBannerComponnet = () => {
         {state.map((item, i) => {
           return (
             <FlexBannerImage key={i}>
-              <img className="img" src={item} alt="" />
+              <NavLink to={`/ad`}>
+                <img className="img" src={item} alt="" />
+              </NavLink>
             </FlexBannerImage>
           );
         })}

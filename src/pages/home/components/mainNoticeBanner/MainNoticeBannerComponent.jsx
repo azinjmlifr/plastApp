@@ -13,13 +13,13 @@ const MainNoticeBannerComponent = () => {
   return (
     <GlobalContainer>
       <FlexMainNoticeBanner>
-        {state.map((item, i) => {
+        {/* {state.map((item, i) => {
           return (
             <div className="banner" key={i}>
               <img className="banner--img" src={`${BASE_URL}/${item}`} alt="" />
             </div>
           );
-        })}
+        })} */}
       </FlexMainNoticeBanner>
     </GlobalContainer>
   );

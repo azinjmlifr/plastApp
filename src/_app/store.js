@@ -4,6 +4,8 @@ import homeSliderReducer from "../pages/home/components/mainSlider/mainSliderSli
 import homeCategoriesReducer from "../pages/home/components/mainCategoy/mainCategorySlice";
 import homeSuggestedReducer from "../pages/home/components/mainSuggested/mainSuggestedSlice";
 import mainBannerReducer from "../layout/layoutSlice";
+import homePopularReducer from "../pages/home/components/mainPopularProducts/mainPopularSlice";
+import homeSomeproductsReducer from "../pages/home/components/mainProducts/MainProductsSlice";
 
 export default configureStore({
   reducer: {
@@ -11,5 +13,7 @@ export default configureStore({
     homeCategoriesReducer,
     homeSuggestedReducer,
     mainBannerReducer,
+    homePopularReducer,
+    homeSomeproductsReducer,
   },
 });

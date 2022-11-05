@@ -20,20 +20,20 @@ import { MAIN_SUGGESTED_PRODUCTS } from "../../../../service/homeService";
 
 import { HomeLan } from "../../../../json/language/fa";
 
-const MainSuggestedComponent = () => {
+const MainSuggestedComponent = ({ title }) => {
   const dispatch = useDispatch();
   const state = useSelector(mainSuggestedProducts);
 
   useEffect(() => {
     if (state.length <= 0) {
-      dispatch(getAllSuggested(MAIN_SUGGESTED_PRODUCTS));
+      // dispatch(getAllSuggested(MAIN_SUGGESTED_PRODUCTS));
     }
   }, [state.length, dispatch]);
 
   return (
     <GlobalContainer>
       <Typography component="h2" variant="h2" textAlign="center" marginY={4}>
-        {HomeLan.mainSuggested_title}
+        {title}
       </Typography>
 
       <FlexMainSuggested className="rounded-1 hidden p10 ">

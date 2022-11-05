@@ -7,6 +7,12 @@ import MainSuggestedComponent from "./components/mainSuggested/MainSuggestedComp
 import MainNoticeBannerComponent from "./components/mainNoticeBanner/MainNoticeBannerComponent";
 import MainShopsComponent from "./components/mainShops/MainShopsComponent";
 import MainBannerComponent from "./components/mainBanner/MainBannerComponnet";
+import MainProductsComponent from "./components/mainProducts/MainProductsComponent";
+import MainFeatureBannerComponent from "./components/mainFeatureBanner/MainFeatureBannerComponent";
+import MainWonderfullyComponent from "./components/mainWonderfully/MainWonderfullyComponent";
+import MainPopularProducts from "./components/mainPopularProducts/MainPopularProducts";
+import MainGoToWonderfully from "./components/mainGoToWonderfullyDiv/mainGoToWonderfully";
+
 import { HomeLan } from "../../json/language/fa";
 
 // import { useSelector } from "react-redux";
@@ -19,13 +25,18 @@ const HomeComponent = () => {
       <MainSliderComponent />
       <MainSearchComponent />
       <MainCategoryComponent />
-      <MainSuggestedComponent />
+      <MainSuggestedComponent title={HomeLan.mainSuggested_title} />
       <MainNoticeBannerComponent />
       <MainShopsComponent title={HomeLan.mainTopShops_title} />
       <MainBannerComponent />
       <MainShopsComponent title={HomeLan.mainPopularShops_title} />
       <MainBannerComponent />
-      <MainSuggestedComponent />
+      <MainProductsComponent title={HomeLan.mainAllProducts_title} />
+      <MainFeatureBannerComponent />
+      <MainWonderfullyComponent />
+      <MainBannerComponent />
+      <MainPopularProducts />
+      <MainNoticeBannerComponent />
     </div>
   );
 };

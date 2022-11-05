@@ -48,13 +48,18 @@ export default function GlobalStyles() {
         }
 
         a {
-          color: var(--primary-black);
+          color: inherit;
           text-decoration: none;
           outline: none;
         }
 
         button {
           all: unset;
+        }
+
+        ul,
+        li {
+          list-style-type: none;
         }
 
         input {
