@@ -10,9 +10,9 @@ const MainNoticeBannerComponent = () => {
   const state = useSelector(firstBanners);
   const data = Object.values(state);
 
-  useEffect(() => {
-    console.log(data);
-  }, []);
+  // useEffect(() => {
+  //   console.log(data);
+  // }, []);
 
   return (
     <GlobalContainer>
