@@ -14,15 +14,17 @@ import img2 from "../../../../assets/adImgs/ad2.webp";
 import img3 from "../../../../assets/adImgs/ad3.webp";
 
 export const MainBannerComponnet = () => {
-  //   const dispatch = useDispatch();
-  //   const state = useSelector(mainBanner);
-  //   const status = useSelector(BannerStatus);
+  // const dispatch = useDispatch();
+  // const state = useSelector(mainBanner);
+  // const status = useSelector(BannerStatus);
 
-  //   useEffect(() => {
-  //     if (state.length <= 0) {
-  //       dispatch(getAllBannerImg(MAIN_BANNERS));
-  //     }
-  //   }, [state.length, dispatch]);
+  // useEffect(() => {
+  //   if (state.length <= 0) {
+  //     dispatch(getAllBannerImg(MAIN_BANNERS));
+  //   }
+
+  //   console.log
+  // }, [state.length, dispatch]);
 
   const state = [img1, img2, img3, img1];
   return (

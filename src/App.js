@@ -24,6 +24,7 @@ function App() {
           <Route path="register" element={<RegisterComponent />} />
           <Route path="login" element={<LoginComponent />} />
           <Route path="/*" element={<AppContent />} />
+          {/* <Route path="/asignment" element={<Asignment />} /> */}
         </Routes>
       </ThemeProvider>
     </div>

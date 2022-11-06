@@ -17,15 +17,28 @@ export const FlexMainBanner = styled.div`
     width: 160px;
     hight: 50px;
   }
-  .discountDiv {
+  basketImg-div {
+    width: clac(100%/4);
+  }
+  .wonderImg-div {
+    width: clac(100%/4);
+  }
+  .discount-div {
+    width: clac(100%/4);
     background-color: #3ead07;
     border-radius: 20px;
     font-size: 10px;
-
+    width: 100%;
+    height: 36px;
+    text-align: center;
     &--discountTitle {
       color: #fcfcfc;
-      padding: 15px;
+      padding: 20px;
     }
+  }
+
+  .products-div {
+    width: clac(100%/4) !important;
   }
 
   .goToProducts {
@@ -38,6 +51,15 @@ export const FlexMainBanner = styled.div`
       &--arrow {
         width: 10px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .wonderImg {
+      width: 30px;
+    }
+    .basketImg {
+      width: 30px;
     }
   }
 `;

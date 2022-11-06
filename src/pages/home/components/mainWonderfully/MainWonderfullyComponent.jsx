@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { BASE_URL } from "../../../../api/apiClient";
 import { FlexMainBanner } from "./styledMainWonderfully";
-import { FlexWonderfullyImage } from "./styledWonderfullyImg";
-import { FlexBannerDiv } from "./styledWonderfullyGoToProducts";
+// import { FlexWonderfullyImage } from "./styledWonderfullyImg";
+// import { FlexBannerDiv } from "./styledWonderfullyGoToProducts";
 // import { firstBanners } from "../../../../layout/layoutSlice";
 // import { getAllBannerImg, mainBanner, BannerStatus } from "./mainBannerSLice";
 // import { MAIN_BANNERS } from "../../../../service/homeService";
@@ -21,41 +21,38 @@ import MainGoToWonderfully from "../mainGoToWonderfullyDiv/mainGoToWonderfully";
 import { HomeLan } from "../../../../json/language/fa";
 
 export const MainBannerComponnet = ({ discount }) => {
-  //   const dispatch = useDispatch();
-  //   const state = useSelector(mainBanner);
-  //   const status = useSelector(BannerStatus);
+  // const dispatch = useDispatch();
+  // const state = useSelector(mainBanner);
+  // const status = useSelector(BannerStatus);
 
-  //   useEffect(() => {
-  //     if (state.length <= 0) {
-  //       dispatch(getAllBannerImg(MAIN_BANNERS));
-  //     }
-  //   }, [state.length, dispatch]);
+  // useEffect(() => {
+  //   if (state.length <= 0) {
+  //     dispatch(getAllBannerImg(MAIN_BANNERS));
+  //   }
+  // }, [state.length, dispatch]);
 
-  const state = [img1, img2];
+  // const state = [img1, img2];
   return (
     <GlobalBannerContainer
       style={{
         backgroundColor: "#EAEFE8",
       }}
     >
-      <FlexMainBanner
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <div>
+      <FlexMainBanner>
+        <div className="basketImg-div">
           <img src={basketImg} className="basketImg" />
         </div>
-        <div>
+        <div className="wonderImg-div">
           <img src={wonderImg} className="wonderImg" />
         </div>
-        <div className="discountDiv">
+        <div className="discount-div">
           <p className="discountDiv--discountTitle">
             تا % <span> {discount} </span> تخفیف
           </p>
         </div>
-        <MainGoToWonderfully />
+        <div className="products-div">
+          <MainGoToWonderfully />
+        </div>
       </FlexMainBanner>
     </GlobalBannerContainer>
   );
